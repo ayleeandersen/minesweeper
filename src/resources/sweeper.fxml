@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs2410.assn8.controller.Controller">
+   <top>
+      <HBox alignment="CENTER" spacing="20.0" style="-fx-background-color: #DCDCDD;" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ComboBox fx:id="sizeOptions" promptText="Size" style="-fx-background-color: #C5C3C6;" />
+                  <ComboBox fx:id="difficultyOptions" promptText="Difficulty" style="-fx-background-color: #C5C3C6;" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <Button fx:id="start" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="27.0" prefWidth="73.0" style="-fx-background-color: #46494C;" text="Start" textAlignment="CENTER" textFill="#c5c3c6" />
+            <HBox alignment="CENTER_RIGHT" spacing="20.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="34.0" prefWidth="82.0">
+                     <children>
+                        <Label contentDisplay="CENTER" text="Bombs Left" />
+                        <Label fx:id="bombsLeft" text="0" textAlignment="CENTER" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="Time" textAlignment="CENTER" />
+                        <Label fx:id="time" text="0" />
+                     </children>
+                  </VBox>
+                  <Button fx:id="sound" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #C5C3C6;" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <GridPane fx:id="grid" alignment="CENTER" BorderPane.alignment="CENTER">
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+</BorderPane>

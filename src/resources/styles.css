@@ -1,0 +1,45 @@
+#initial-board-set-up {
+    -fx-background-color: #1985A1;
+    -fx-border-color: #46494C;
+    -fx-border-radius: 0;
+}
+
+#initial-board-set-up:hover, #cell-flagged:hover, #cell-questioned:hover {
+    -fx-background-color: #46494C;
+}
+
+#normal-cell-revealed {
+    -fx-background-color: #DCDCDD;
+    -fx-border-color: #DCDCDD;
+    -fx-border-radius: 0;
+}
+
+#cell-flagged {
+    -fx-background-color: #1985A1;
+    -fx-border-color: #46494C;
+    -fx-border-radius: 0;
+}
+
+#cell-questioned {
+    -fx-background-color: #1985A1;
+    -fx-border-color: #46494C;
+    -fx-border-radius: 0;
+}
+
+#bomb-cell {
+    -fx-background-color: #92140C;
+    -fx-border-color: #46494C;
+    -fx-border-radius: 0;
+}
+
+#won-bomb-cells {
+    -fx-background-color: #0f6b0c;
+    -fx-border-color: #46494C;
+    -fx-border-radius: 0;
+}
+
+#incorrectly-marked {
+    -fx-background-color: #FED24F;
+    -fx-border-color: #46494C;
+    -fx-border-radius: 0;
+}
